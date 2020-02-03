@@ -1,9 +1,7 @@
 # HuskyTECC
 # AdaptiLab HireAssistant
 
-The project will be to create a Google Chrome extension that allows users to easily apply to many jobs online with pre-filled information and provides users with recommendations for similar jobs. The chrome extension builds on an existing AdaptiLab product, a job recommender engine with an integrated web scraper that gathers data from online job boards. The chrome extension will call an API endpoint that receives organized data found by the existing product. The majority of the engineering work done for the chrome extension will be customer-facing (e.g. making an intuitive and functional UI for candidates to interact with). The definition of "MVP" for the project is flexible; the minimum requirement is a functioning chrome extension with a usable UI, a suite of features
-outlined in a future feature spec, and a structured code-base that allows for future iterations.
-
+The project will be to create a Google Chrome extension that allows users to easily apply to many jobs online with pre-filled information and provides users with recommendations for similar jobs. The chrome extension builds on an existing AdaptiLab product, a job recommender engine with an integrated web scraper that gathers data from online job boards. The chrome extension will call an API endpoint that receives organized data found by the existing product. The majority of the engineering work done for the chrome extension will be customer-facing (e.g. making an intuitive and functional UI for candidates to interact with).
 ## Getting Started
 
 To be continued...

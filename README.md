@@ -1,14 +1,14 @@
 # HuskyTECC
 # AdaptiLab HireAssistant
 
-The project will be to create a Google Chrome extension that allows users to easily apply to many jobs online with pre-filled information and provides users with recommendations for similar jobs. The chrome extension builds on an existing AdaptiLab product, a job recommender engine with an integrated web scraper that gathers data from online job boards. The chrome extension will call an API endpoint that receives organized data found by the existing product. The majority of the engineering work done for the chrome extension will be customer-facing (e.g. making an intuitive and functional UI for candidates to interact with).
+The project will be to create a Google Chrome extension that allows users to easily apply to many jobs online with pre-filled information and provides users with recommendations for similar jobs. The chrome extension builds on an existing AdaptiLab product, a job recommender engine with an integrated web scraper that gathers data from online job boards. The chrome extension will call an API endpoint that receives organized data found by the existing product. The majority of the engineering work done for the Chrome extension will be customer-facing (e.g. making an intuitive and functional UI for candidates to interact with).
 ## Getting Started
 
 To be continued...
 
 ### Prerequisites
 
-To download AdaptiLab HireAssistant, you'll need to have Google Chorme. Currently we do not support Safari, Fire Fox nor other 
+To download AdaptiLab HireAssistant, you'll need to have Google Chrome. Currently we do not support Safari, Fire Fox nor other 
 web search engine. 
 
 ### Installing

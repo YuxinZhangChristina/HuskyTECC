@@ -4,6 +4,7 @@
 The project will be to create a Google Chrome extension that allows users to easily apply to many jobs online with pre-filled information and provides users with recommendations for similar jobs. The chrome extension builds on an existing AdaptiLab product, a job recommender engine with an integrated web scraper that gathers data from online job boards. The chrome extension will call an API endpoint that receives organized data found by the existing product. The majority of the engineering work done for the Chrome extension will be customer-facing (e.g. making an intuitive and functional UI for candidates to interact with).
 
 [Landing Page](https://yuxinzhangchristina.github.io/HuskyTECC/)
+[Landing Page Mockup](https://hireassist.carrd.co/)
 
 ## Getting Started
 

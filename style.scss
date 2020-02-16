@@ -4,6 +4,7 @@ $base-lightblue: #c0f0f7;
 $base-turquoise: #00a8a8;
 $base-grey: #e1e7ed;
 $base-black: #272829;
+
 body {
   margin: 0;
   padding: 0;
@@ -50,7 +51,7 @@ body {
     }
   }
 
-  .link {
+  .a_link {
     &:hover {
       color: $base-green;
       transition: 0.3s;

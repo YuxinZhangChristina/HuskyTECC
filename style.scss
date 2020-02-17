@@ -10,9 +10,7 @@ body {
   padding: 0;
   font-family: "Raleway", "Roboto", "Proxima Nova", Helvetica, sans-serif;
   font-size: 16px;
-  .navbar {
-    background: $base-black;
-  }
+
 }
 
 .navbar {
@@ -21,7 +19,7 @@ body {
   position: fixed;
   width: 100%;
   height: 100px;
-  background: $base-black;
+  background-color: $base-black;
   box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
   ul {
     height: 100%;
@@ -70,24 +68,56 @@ body {
   grid-template-columns: 1fr;
   height: 100%;
 
+  .section_content{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 500px;
+    .card {
+      background-color: $base-lightblue;
+      border-radius: 30px;
+      font-family: "Roboto";
+      padding: 14px 40px;
+      margin-bottom: 20px;
+      h4{
+        font-size: 2rem;
+        margin: 0;
+      }
+      p {
+        margin: 0;
+        font-size: 1rem;
+        text-align: left;
+      }
+    }
+  }
+
   .intro {
-    padding: 0 200px;
+    margin: 0;
     padding-top: 200px;
     height: calc(100vh - 200px);
     background: $base-grey;
     h1 {
       font-size: 2.5rem;
-      max-width: 600px;
     }
     h2 {
       font-size: 1.5rem;
-      max-width: 600px;
     }
   }
 
-  .section-2 {
+  .why {
     height: 100vh;
     background: #fff;
+    h4 {
+      font-size: 1rem;
+      font-family: "Roboto";
+      font-weight: normal;
+    }
+    h3 {
+      padding-top: 20px;
+      font-size: 2rem;
+    }
+    .section_content {
+      max-width: 420px;
+    }
   }
 
   .section-3 {
@@ -130,7 +160,15 @@ footer {
   color: #fff;
 }
 
+// for large screens
+@media (min-width: 800px){
+  .section_content {
+    padding: 0px 100px;
+  }
+}
+
 @media (max-width: 976px) {
+  // screens smaller than 976 have no navbar links
   .link {
     display: none;
   }

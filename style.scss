@@ -77,15 +77,29 @@ body {
       border-radius: 30px;
       font-family: "Roboto";
       padding: 14px 40px;
-      margin-bottom: 20px;
+      margin: 0px auto 20px auto;
       h4{
         font-size: 2rem;
         margin: 0;
+        color: $base-black;
+        font-weight: normal;
       }
       p {
         margin: 0;
         font-size: 1rem;
         text-align: left;
+      }
+    }
+    .info_card {
+      color: #fff;
+      background-color: $base-black;
+      font-family: "Roboto";
+      border-radius: 30px;
+      padding: 10px;
+      margin: 0px auto 40px auto;
+      max-width: 300px;
+      p {
+        margin: 0;
       }
     }
   }
@@ -104,12 +118,13 @@ body {
   }
 
   .why {
-    height: 100vh;
+    min-height: 100vh;
     background: #fff;
     h4 {
-      font-size: 1rem;
+      font-size: 1.2rem;
       font-family: "Roboto";
       font-weight: normal;
+      color: $base-green;
     }
     h3 {
       padding-top: 20px;
@@ -120,19 +135,31 @@ body {
     }
   }
 
-  .section-3 {
-    height: 100vh;
+  .team {
+    min-height: 100vh;
     background: $base-grey;
-  }
-
-  .section-4 {
-    height: 100vh;
-    background: #fff;
-  }
-
-  .section-5 {
-    height: 100vh;
-    background: $base-grey;
+    h3 {
+      font-size: 2rem;
+    }
+    .card {
+      padding: 0;
+      max-width: 240px;
+      h4{
+        font-size: 1.5rem;
+        padding-bottom: 6px;
+      }
+      img {
+        max-width: 200px;
+        max-height: 200px;
+        padding: 20px 20px 2px 20px;
+      }
+      .bio {
+    
+        text-align: center;
+        padding: 0px 14px 14px 20px;
+      }
+      background-color: #fff;
+    }
   }
 }
 

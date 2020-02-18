@@ -1,3 +1,4 @@
+/* COLORS */
 $base-green: #14b860;
 $base-blue: #1f628e;
 $base-lightblue: #c0f0f7;
@@ -13,6 +14,11 @@ body {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR STYLES */
 .navbar {
   display: flex;
   position: -webkit-sticky;
@@ -62,111 +68,207 @@ body {
   }
 }
 
+/* MAIN CONTENT STYLES */
 .content {
   margin: 0 auto;
-  .section_content {
-    text-align: center;
+}
+
+.section_content {
+  text-align: center;
+  padding: 1rem;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .section_description {
     margin: 0 auto;
-    max-width: 500px;
-    .card {
-      background-color: $base-lightblue;
-      border-radius: 30px;
-      font-family: "Roboto";
-      padding: 14px 40px;
-      margin: 0px auto 20px auto;
-      h4 {
-        font-size: 2rem;
-        margin: 0;
-        color: $base-black;
-        font-weight: normal;
-      }
-      p {
-        margin: 0;
-        font-size: 1rem;
-        text-align: left;
-      }
-    }
-    .info_card {
-      color: #fff;
-      background-color: $base-black;
-      font-family: "Roboto";
-      border-radius: 30px;
-      padding: 10px;
-      margin: 0px auto 40px auto;
-      max-width: 300px;
-      p {
-        margin: 0;
-      }
-    }
-  }
+    max-width: 600px;
 
-  .intro {
-    margin: 0;
-    padding-top: 200px;
-    height: calc(100vh - 200px);
-    background: $base-grey;
-    h1 {
-      font-size: 2.5rem;
-    }
-    h2 {
-      font-size: 1.5rem;
-    }
-  }
-
-  .why {
-    min-height: 100vh;
-    background: #fff;
-    margin: 0 auto;
-
-    .why_cards {
-      display: flex;
-      justify-content: center;
-
-      .card {
-        min-width: 400px;
-      }
-    }
     h4 {
-      font-size: 1.2rem;
-      font-family: "Roboto";
-      font-weight: normal;
-      color: $base-green;
-    }
-    h3 {
-      padding-top: 20px;
-      font-size: 2rem;
-    }
-    .section_content {
-      max-width: 420px;
+      color: #119c52;
+      font-weight: bold;
     }
   }
+}
 
-  .features {
-    background-color: $base-grey;
+/* INTRODUCTION SECTION */
+.intro {
+  margin: 0;
+  padding-top: 200px;
+  height: 100vh;
+  background: $base-grey;
+  h1 {
+    font-size: 2.5rem;
   }
+  h2 {
+    font-size: 1.5rem;
+  }
+}
 
-  .team {
-    min-height: 100vh;
-    background: #fff;
-    h3 {
-      font-size: 2rem;
+/* VALUE PROPOSTION SECTION */
+.why {
+  background: #fff;
+  margin: 0 auto;
+
+  .why_cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 976px;
+
+    .card {
+      max-width: 400px;
     }
+  }
+  h4 {
+    font-size: 1.2rem;
+    font-family: "Roboto";
+    font-weight: normal;
+    color: #14b860;
+  }
+  h3 {
+    padding-top: 20px;
+    font-size: 2rem;
+  }
+}
+/* FEATURES SECTION */
+.features {
+  background-color: $base-grey;
 
-    .team_cards {
-      display: flex;
-      justify-content: center;
+  h3 {
+    text-align: center;
+  }
+}
 
-      .card {
+/* TEAM SECTION */
+.team {
+  background: #fff;
+  h3 {
+    font-size: 2rem;
+  }
+}
+
+.card_group {
+  display: flex;
+  .team_cards {
+    display: flex;
+    .team_card {
+      padding: 0;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      border-radius: 5px;
+      width: 240px;
+      margin: 1rem;
+      font-weight: bold;
+      background-color: $base-grey;
+      h4 {
+        // font-size: 1.5rem;
         padding: 0;
-        max-width: 240px;
-        h4 {
+        margin: 0;
+      }
+      img {
+        max-width: 200px;
+        max-height: 200px;
+        padding: 20px 20px 2px 20px;
+        border-radius: inherit;
+      }
+
+      .bio {
+        text-align: center;
+        padding: 0;
+      }
+      p {
+        margin: 1rem;
+      }
+    }
+  }
+}
+
+/* Footer */
+footer {
+  height: 10rem;
+  background: $base-black;
+  a {
+    img {
+      max-width: 200px;
+      padding: 1rem;
+    }
+  }
+
+  p {
+    color: #fff;
+  }
+}
+
+/* SINGLE ELEMENTS */
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav_button {
+  background: $base-green;
+  padding: 0.5rem 1.8rem;
+  width: 100%;
+  border-radius: 30px;
+  color: #fff;
+}
+
+.button {
+  margin: 1.5rem;
+}
+.big_button {
+  background: $base-green;
+  padding: 1rem 3rem;
+  width: 400px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.anchor {
+  display: block;
+  height: 100px; /*same height as header*/
+  margin-top: -100px; /*same height as header*/
+  visibility: hidden;
+}
+
+#why_anchor {
+  display: block;
+  margin-top: 10px; /*same height as header*/
+  visibility: hidden;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 976px) {
+  // screens smaller than 976 have no navbar links
+  .link {
+    display: none;
+  }
+
+  .logo {
+    img {
+      min-width: 200px;
+    }
+  }
+  .why_cards {
+    flex-direction: column;
+  }
+
+  .card_group {
+    flex-direction: column;
+    .team_cards {
+      .team_card {
+        width: 220px;
+        margin: 0.5rem;
+        b h4 {
           font-size: 1.5rem;
           padding-bottom: 6px;
         }
         img {
-          max-width: 200px;
-          max-height: 200px;
-          padding: 20px 20px 2px 20px;
+          width: 80%;
+          padding: 1rem 1rem 2px 1rem;
         }
 
         .bio {
@@ -177,46 +279,28 @@ body {
       }
     }
   }
-}
 
-a {
-  text-decoration: none;
-  color: #fff;
-}
-
-footer {
-  height: 10rem;
-  background: $base-black;
-}
-
-.a_button {
-  background: $base-green;
-  padding: 0.5rem 1.8rem;
-  border-radius: 30px;
-  color: #fff;
-}
-.big_button {
-  background: $base-green;
-  padding: 1rem 3rem;
-  border-radius: 30px;
-  font-size: 1.2rem;
-  color: #fff;
-}
-
-// for large screens
-@media (min-width: 800px) {
-  .section_content {
-    padding: 0px 100px;
+  .navbar {
+    ul {
+      margin: 0;
+      li {
+        padding: 0;
+        margin-right: 2rem;
+        margin-left: 0;
+      }
+    }
   }
-}
 
-@media (max-width: 976px) {
-  // screens smaller than 976 have no navbar links
-  .link {
-    display: none;
-  }
-  .team_cards,
-  .why_cards {
-    flex-direction: column;
+  footer {
+    a {
+      img {
+        max-width: 150px;
+        padding: 1rem;
+      }
+    }
+
+    p {
+      color: #fff;
+    }
   }
 }

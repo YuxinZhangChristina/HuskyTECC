@@ -14,19 +14,22 @@
       href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="/img/icon-light-on-dark.svg" />
   </head>
 
   <body>
     <div class="navbar">
       <div class="logo">
-        <a href="/"><img src="assets/logo_large.svg"/></a>
+        <a href="/"><img src="img/logo_large.svg"/></a>
       </div>
       <div class="spacer"></div>
       <ul>
-        <li class="link"><a href="/" class="a_link">Link 1</a></li>
-        <li class="link"><a href="/" class="a_link">Link 2</a></li>
-        <li class="link"><a href="/" class="a_link">Link 3</a></li>
-        <li class="button"><a href="/" class="a_button">Add to Chrome</a></li>
+        <li class="link"><a href="#why" class="a_link">Why us?</a></li>
+        <li class="link"><a href="#features" class="a_link">Features</a></li>
+        <li class="link"><a href="#about" class="a_link">About</a></li>
+        <li>
+          <a href="/" class="nav_button">Add to Chrome</a>
+        </li>
       </ul>
     </div>
 
@@ -38,98 +41,126 @@
             Find and apply to more machine learning positions at top tech
             companies in less time
           </h2>
-          <button class="big_button">Add to Chrome For Free</button>
+          <div class="button">
+            <a href="/" class="big_button">Add to Chrome For Free</a>
+          </div>
         </div>
       </div>
-
-      <div class="why">
-        <div class="section_content">
+    </div>
+    <span class="anchor" id="why"></span>
+    <div class="why">
+      <div class="section_content">
+        <div class="section_description">
           <h4>
             Finding a machine learning or data science job is often a long and
             difficult process. Especially for those without fulltime experience
             in the roles they are applying to.
           </h4>
-          <h3>
-            How we can help
-          </h3>
-          <div class="why_cards">
-            <div class="card">
-              <h4>Save Time</h4>
-              <p>
-                Spend less time finding and applying to jobs by getting jobs
-                personally reccomended to you and automatically filling
-                applications.
-              </p>
-            </div>
-            <div class="card">
-              <h4>Expand your job search</h4>
-              <p>
-                by receiving customized job reccomendations. View job listings
-                from a wide variety of companies and increase the amount of
-                applications you submit.
-              </p>
-            </div>
-            <div class="card">
-              <h4>Focus on ML</h4>
-              <p>
-                HireAssist.ML is made for finding machine learning and data
-                science roles specfically. Our solution allows you to get rid of
-                unnessary noise and focus on applying to the roles you care
-                about.
-              </p>
-            </div>
+        </div>
+        <h3>
+          How we can help
+        </h3>
+        <div class="why_cards">
+          <div class="card">
+            <h4>Save Time</h4>
+            <p>
+              Spend less time finding and applying to jobs by getting jobs
+              personally reccomended to you and automatically filling
+              applications.
+            </p>
+          </div>
+          <div class="card">
+            <h4>Expand your job search</h4>
+            <p>
+              View job listings from a wide variety of companies and increase
+              the amount of applications you submit.
+            </p>
+          </div>
+          <div class="card">
+            <h4>Focus on ML</h4>
+            <p>
+              HireAssist.ML is made for finding machine learning and data
+              science roles specfically. Our solution allows you to get rid of
+              unnessary noise and focus on applying to the roles you care about.
+            </p>
           </div>
         </div>
       </div>
+      <span class="anchor" id="features"></span>
       <div class="features">
-        <div class="section_content"></div>
-        <h1>Features</h1>
+        <div class="section_content">
+          <h3>Features</h3>
+        </div>
       </div>
+      <span class="anchor" id="about"></span>
       <div class="team">
         <div class="section_content">
           <h3>Meet the Team</h3>
           <div class="info_card">
-            <p>
-              We are a team of 4 undergraduate informatics students at the
-              University of Washington sponsored by AdaptiLab. HireAssist.ML is
-              created as part of Capstone Project Course at the University of
-              Washington Information School.
-            </p>
+            <div class="section_description">
+              <p>
+                We are a team of undergraduate students at the University of
+                Washington in Seattle. Sponsored by AdaptiLab, HireAssist.ML was
+                created as part of the iSchool's Capstone Project Course.
+              </p>
+            </div>
           </div>
-          <div class="team_cards">
-            <div class="card">
-              <div class="bio">
-                <h4>Christina Zhang</h4>
-                <p>Project Management</p>
-                <p>chriszh@uw.edu</p>
+          <div class="card_group">
+            <div class="team_cards">
+              <div class="team_card">
+                <div class="bio">
+                  <h4>Christina Zhang</h4>
+                  <p>Project Management</p>
+                  <p>chriszh@uw.edu</p>
+                </div>
+              </div>
+              <div class="team_card">
+                <div class="bio">
+                  <h4>Thomas Penner</h4>
+                  <p>Development and Design</p>
+                  <p>pennert@uw.edu</p>
+                </div>
               </div>
             </div>
-            <div class="card">
-              <div class="bio">
-                <h4>Thomas Penner</h4>
-                <p>Development and Design</p>
-                <p>pennert@uw.edu</p>
+            <div class="team_cards">
+              <div class="team_card">
+                <div class="bio">
+                  <h4>Chris Forbes</h4>
+                  <p>Development and Graphic Design</p>
+                  <p>cforbes1@uw.edu</p>
+                </div>
               </div>
-            </div>
-            <div class="card">
-              <div class="bio">
-                <h4>Chris Forbes</h4>
-                <p>Development and Graphic Design</p>
-                <p>cforbes1@uw.edu</p>
-              </div>
-            </div>
-            <div class="card">
-              <img src="./img/even.jpg" alt="Even Whitcomb" />
-              <div class="bio">
-                <h4>Even Whitcomb</h4>
-                <p>Development and Design</p>
-                <p>evenw@uw.edu</p>
+              <div class="team_card">
+                <img src="./img/even.jpg" alt="Even Whitcomb" />
+                <div class="bio">
+                  <h4>Even Whitcomb</h4>
+                  <p>Development and Design</p>
+                  <p>evenw@uw.edu</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <footer>Footer</footer>
+    <footer>
+      <div class="section_content">
+        <div class="footer_images">
+          <a href="https://ischool.uw.edu/">
+            <img src="/img/iSchoolPrimary_RGB_Gold.png" alt="iSchool Logo" />
+          </a>
+          <a href="https://adaptilab.com">
+            <img
+              src="/img/adaptilab-color-light-on-dark.png"
+              alt="AdaptiLab Logo"
+            />
+          </a>
+        </div>
+        <p>
+          This project is a part of the Capstone Project course at the
+          University of Washington Information School
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

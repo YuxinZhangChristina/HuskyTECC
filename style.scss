@@ -10,7 +10,7 @@ body {
   padding: 0;
   font-family: "Raleway", "Roboto", "Proxima Nova", Helvetica, sans-serif;
   font-size: 16px;
-
+  box-sizing: border-box;
 }
 
 .navbar {
@@ -63,8 +63,8 @@ body {
 }
 
 .content {
-
-  .section_content{
+  margin: 0 auto;
+  .section_content {
     text-align: center;
     margin: 0 auto;
     max-width: 500px;
@@ -74,7 +74,7 @@ body {
       font-family: "Roboto";
       padding: 14px 40px;
       margin: 0px auto 20px auto;
-      h4{
+      h4 {
         font-size: 2rem;
         margin: 0;
         color: $base-black;
@@ -116,6 +116,16 @@ body {
   .why {
     min-height: 100vh;
     background: #fff;
+    margin: 0 auto;
+
+    .why_cards {
+      display: flex;
+      justify-content: center;
+
+      .card {
+        min-width: 400px;
+      }
+    }
     h4 {
       font-size: 1.2rem;
       font-family: "Roboto";
@@ -137,24 +147,30 @@ body {
     h3 {
       font-size: 2rem;
     }
-    .card {
-      padding: 0;
-      max-width: 240px;
-      h4{
-        font-size: 1.5rem;
-        padding-bottom: 6px;
+
+    .team_cards {
+      display: flex;
+      justify-content: center;
+
+      .card {
+        padding: 0;
+        max-width: 240px;
+        h4 {
+          font-size: 1.5rem;
+          padding-bottom: 6px;
+        }
+        img {
+          max-width: 200px;
+          max-height: 200px;
+          padding: 20px 20px 2px 20px;
+        }
+
+        .bio {
+          text-align: center;
+          padding: 0px 14px 14px 20px;
+        }
+        background-color: #fff;
       }
-      img {
-        max-width: 200px;
-        max-height: 200px;
-        padding: 20px 20px 2px 20px;
-      }
-      .bio {
-    
-        text-align: center;
-        padding: 0px 14px 14px 20px;
-      }
-      background-color: #fff;
     }
   }
 }
@@ -184,7 +200,7 @@ footer {
 }
 
 // for large screens
-@media (min-width: 800px){
+@media (min-width: 800px) {
   .section_content {
     padding: 0px 100px;
   }
@@ -194,5 +210,9 @@ footer {
   // screens smaller than 976 have no navbar links
   .link {
     display: none;
+  }
+  .team_cards,
+  .why_cards {
+    flex-direction: column;
   }
 }

@@ -141,9 +141,13 @@ body {
     }
   }
 
+  .features {
+    background-color: $base-grey;
+  }
+
   .team {
     min-height: 100vh;
-    background: $base-grey;
+    background: #fff;
     h3 {
       font-size: 2rem;
     }
@@ -169,7 +173,7 @@ body {
           text-align: center;
           padding: 0px 14px 14px 20px;
         }
-        background-color: #fff;
+        background-color: $base-grey;
       }
     }
   }

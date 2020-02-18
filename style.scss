@@ -63,10 +63,6 @@ body {
 }
 
 .content {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr;
-  height: 100%;
 
   .section_content{
     text-align: center;

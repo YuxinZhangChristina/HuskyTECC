@@ -95,15 +95,23 @@ html {
 
 /* INTRODUCTION SECTION */
 .intro {
-  margin: 0;
-  padding-top: 200px;
   height: 100vh;
   background: $base-grey;
+  .section_content {
+    padding-top: 140px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
   h1 {
     font-size: 2.5rem;
   }
   h2 {
     font-size: 1.5rem;
+  }
+  img {
+    padding-top: 40px;
+    height: 200px;
   }
 }
 
@@ -140,6 +148,21 @@ html {
   h3 {
     text-align: center;
   }
+  .feature_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 976px;
+
+    .card {
+      margin: 1rem;
+      max-width: 400px;
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 0 15px;
+    }
+  }
 }
 
 /* TEAM SECTION */
@@ -152,8 +175,12 @@ html {
 
 .card_group {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: center;
   .team_cards {
     display: flex;
+    justify-content: center;
     .team_card {
       padding: 0;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);

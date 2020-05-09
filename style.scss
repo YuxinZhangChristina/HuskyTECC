@@ -154,13 +154,22 @@ html {
     justify-content: center;
     align-items: center;
     max-width: 976px;
+    margin: 0 28px;
 
     .card {
       margin: 1rem;
       max-width: 400px;
-      background-color: #fff;
       border-radius: 5px;
-      padding: 0 15px;
+      padding:  0 28px;
+      display: flex;
+      flex-direction: column;
+      img {
+        width: 100%;
+        height: auto;
+      }
+      p {
+        text-align: left;
+      }
     }
   }
 }

@@ -9,7 +9,7 @@ $base-black: #272829;
 body {
   margin: 0;
   padding: 0;
-  font-family: "Raleway", "Roboto", "Proxima Nova", Helvetica, sans-serif;
+  font-family: "Roboto", "Proxima Nova", Helvetica, sans-serif;
   font-size: 16px;
   box-sizing: border-box;
 }
@@ -81,14 +81,16 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   .section_description {
     margin: 0 auto;
     max-width: 600px;
 
     h4 {
-      color: #119c52;
+      color: #fff;
+      background-color: #119c52;
       font-weight: bold;
+      padding: 2rem;
+      border-radius: 20px;
     }
   }
 }
@@ -99,9 +101,6 @@ html {
   background: $base-grey;
   .section_content {
     padding-top: 140px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
   }
   h1 {
     font-size: 2.5rem;
@@ -110,8 +109,19 @@ html {
     font-size: 1.5rem;
   }
   img {
-    padding-top: 40px;
-    height: 200px;
+    max-height: 70vh;
+  }
+  #main_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  #intro_main_content {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    max-width: 500px;
   }
 }
 
@@ -123,11 +133,13 @@ html {
   .why_cards {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     max-width: 976px;
+    margin: 0 2.5rem;
 
     .card {
       max-width: 400px;
+      padding: 0 2.5rem;
     }
   }
   h4 {
@@ -152,20 +164,22 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     max-width: 976px;
     margin: 0 28px;
 
     .card {
+      background-color: #fff;
       margin: 1rem;
       max-width: 400px;
-      border-radius: 5px;
+      border-radius: 20px;
       padding:  0 28px;
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
       img {
-        width: 100%;
-        height: auto;
+        max-width: 80%;
       }
       p {
         text-align: left;
@@ -288,6 +302,20 @@ a {
       min-width: 200px;
     }
   }
+
+  .intro {
+    .section_content {
+      align-items: center;
+    }
+    #main_container {
+      align-items: center;
+    }
+
+    img {
+      width: 40vw;
+    }
+  }
+
   .why_cards {
     flex-direction: column;
   }

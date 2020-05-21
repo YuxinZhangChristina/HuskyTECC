@@ -99,6 +99,7 @@ html {
 .intro {
   height: 100vh;
   background: $base-grey;
+
   .section_content {
     padding-top: 140px;
   }
@@ -248,6 +249,29 @@ footer {
 
   p {
     color: #fff;
+  }
+}
+
+/* Info Page (terms+conditions and privacy policy) */
+.info {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  .spacer {
+    height: 3rem;
+    background-color: transparent;
+  }
+  .title-box {
+    background-color: transparent;
+  }
+  div {
+    max-width: 600px;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: $base-lightblue;
+    border-radius: 20px;
   }
 }
 
